@@ -1,7 +1,7 @@
 ﻿
 namespace KioscoConsulta
 {
-    partial class Form1
+    partial class PantallaAcceso
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace KioscoConsulta
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaAcceso));
             this.BtIngreso = new System.Windows.Forms.Button();
             this.TbUsuario = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -55,7 +55,7 @@ namespace KioscoConsulta
             this.TbUsuario.TabIndex = 1;
             this.TbUsuario.UseSystemPasswordChar = true;
             // 
-            // Form1
+            // PantallaAcceso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -67,8 +67,8 @@ namespace KioscoConsulta
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "PantallaAcceso";
+            this.Text = "Kiosco_información";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

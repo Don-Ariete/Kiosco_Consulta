@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace KioscoConsulta
 {
-    public partial class Form1 : Form
+    public partial class PantallaAcceso : Form
     {
-        public Form1()
+
+        public PantallaAcceso()
         {
             InitializeComponent();
         }
@@ -20,6 +21,11 @@ namespace KioscoConsulta
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtIngreso_Click(object sender, EventArgs e)
+        {
+            string 
         }
     }
 }
