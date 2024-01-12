@@ -25,7 +25,37 @@ namespace KioscoConsulta
 
         private void BtIngreso_Click(object sender, EventArgs e)
         {
-            string 
+            string usuarioComedor = TbUsuario.Text;
+            PantallaMain FrmPantallaMain = new PantallaMain();
+            FrmPantallaMain.Show();
+            //if (CheckUser(usuarioComedor) != true)
+            //{
+            //    //abrir modal usuario no valido.
+            //    TbUsuario.Text = "";
+            //    TbUsuario.Focus();
+            //}
+            //else 
+            //{//abrir la otra pagina//
+            //    //enviar código y nombre.
+            //      TbUsuario.Text = "";
+            //      TbUsuario.Focus();
+            //}
+
         }
+
+        private bool CheckUser(string usuarioComedor)
+        {
+            bool encontrado = false;
+
+            string queryCheck = "SELECT COUNT(NUM_EMP) FROM NOMINA..AN_COMEDOR_USUARIO WHERE USUARIO_COMEDOR='"+ usuarioComedor + "' AND F_BAJA='' AND F_SUSPENCION='' ";
+            //EJECUTAR QUERY
+            int userExist =1;//ejecutar query
+            if (userExist == 1)
+            {
+                encontrado = true;
+            }
+            return encontrado;
+        }
+
     }
 }

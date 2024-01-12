@@ -38,18 +38,19 @@ namespace KioscoConsulta
             // 
             this.BtIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtIngreso.Location = new System.Drawing.Point(246, 521);
-            this.BtIngreso.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BtIngreso.Margin = new System.Windows.Forms.Padding(6);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(286, 100);
             this.BtIngreso.TabIndex = 0;
             this.BtIngreso.Text = "INGRESAR";
             this.BtIngreso.UseVisualStyleBackColor = true;
+            this.BtIngreso.Click += new System.EventHandler(this.BtIngreso_Click);
             // 
             // TbUsuario
             // 
             this.TbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbUsuario.Location = new System.Drawing.Point(39, 541);
-            this.TbUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TbUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.TbUsuario.Name = "TbUsuario";
             this.TbUsuario.Size = new System.Drawing.Size(178, 62);
             this.TbUsuario.TabIndex = 1;
@@ -66,7 +67,7 @@ namespace KioscoConsulta
             this.Controls.Add(this.BtIngreso);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "PantallaAcceso";
             this.Text = "Kiosco_información";
             this.Load += new System.EventHandler(this.Form1_Load);
